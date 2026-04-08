@@ -426,9 +426,8 @@ LIGHT_GREEN = <span class="hljs-string">'#d8f3dc'</span>
 <hr>
 <h2 id="2-descriptive-statistics">2. Descriptive Statistics</h2>
 <p><strong>SQL Data Query</strong></p>
-<pre class="hljs"><code><div>
-	conn = sqlite3.connect(<span class="hljs-string">'data.db'</span>)
-	product_sales = pd.read_sql_query(<span class="hljs-string">"""
+<pre class="hljs"><code><div>conn = sqlite3.connect(<span class="hljs-string">'data.db'</span>)
+product_sales = pd.read_sql_query(<span class="hljs-string">"""
     SELECT
         p.id, p.name, p.category, p.product_type,
         SUM(ii.quantity) as total_qty_sold,                                       
